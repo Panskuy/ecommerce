@@ -5,7 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="bg-gray-100">
+    <header class="fixed top-0 left-0 w-full bg-gray-100 z-50">
+      <div class="w-full bg-black text-white text-center py-2">
+        <p class="font-medium">
+          Promo Hingga 60%
+          <a href="#" class="inline-block underline"> Beli Sekarang!</a>
+        </p>
+      </div>
+      <div
+        class="flex h-16 items-center gap-8 px-4 sm:px-6 lg:px-8 max-w-screen-2xl mx-auto"
+      >
+        <a class="block text-black" href="#">
+          <span class="font-bold">ABUPHONE</span>
+        </a>
+
+        <div class="flex flex-1 items-center justify-end md:justify-between">
+          <nav aria-label="Global" class="hidden md:block">
+            <ul class="flex items-center gap-6 text-sm">
+              <li>
+                <a
+                  class="text-gray-500 transition hover:text-gray-500/75"
+                  href="#"
+                >
+                  Produk
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-500 transition hover:text-gray-500/75"
+                  href="#"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-500 transition hover:text-gray-500/75"
+                  href="#"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex items-center gap-4">
+            <div class="flex gap-4">
+              <a
+                class="block rounded-md bg-black px-5 py-2.5 text-sm font-medium text-white transition hover:bg-black/80"
+                href="#"
+              >
+                Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="h-full pt-28 flex flex-col items-center">
+      <div class="w-full max-w-[1890px] px-4 sm:px-6 lg:px-8">
+        <section class="">
+          <div class="px-4 py-8 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="w-full md:w-1/2">
+                <div class="max-w-lg md:max-w-none">
+                  <h2
+                    class="text-2xl font-semibold text-gray-900 sm:text-3xl text-center md:text-left"
+                  >
+                    Selamat Datang di <span class="font-bold">ABUPHONE</span>
+                  </h2>
+
+                  <p
+                    class="mt-4 text-gray-700 text-justify pr-0 md:pr-10 mt-0 md:mb-10"
+                  >
+                    Temukan smartphone impianmu dengan harga terbaik dan
+                    kualitas terjamin! Kami menyediakan berbagai pilihan
+                    handphone terbaru dengan garansi resmi dan harga yang
+                    bersahabat. Dapatkan promo spesial hingga 60% untuk
+                    pembelian hari ini. Segera upgrade gadgetmu dan nikmati
+                    pengalaman teknologi yang lebih canggih hanya di toko kami!
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-col md:flex-row gap-2">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1706548332613-a827e7854fef?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="rounded-xl w-[400px] h-full"
+                  alt=""
+                />
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1706548333533-66f170c35213?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="rounded-xl w-[380px] h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full mt-10 h-screen">
+          <section>
+            <div class="px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+              <header class="text-center">
+                <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
+                  Koleksi Produk
+                </h2>
+              </header>
+
+              <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <li class="bg-gray-100 rounded-xl">
+                  <a href="#" class="group block overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1624434207284-727cf0e6ea8e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                      class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                    />
+
+                    <div class="relative pt-3 bg-gray-100">
+                      <div class="flex justify-between items-center">
+                        <h3
+                          class="text-lg text-gray-700 group-hover:underline group-hover:underline-offset-4"
+                        >
+                          Xiaomi Redmi
+                        </h3>
+
+                        <p class="mt-2">
+                          <span class="tracking-wider text-gray-900">
+                            Rp. 2.000.000
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="bg-gray-100 rounded-xl">
+                  <a href="#" class="group block overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1609252924198-30b8cb324d2b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                      class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                    />
+
+                    <div class="relative pt-3 bg-gray-100">
+                      <div class="flex justify-between items-center">
+                        <h3
+                          class="text-lg text-gray-700 group-hover:underline group-hover:underline-offset-4"
+                        >
+                          Samsung Galaxy
+                        </h3>
+
+                        <p class="mt-2">
+                          <span class="tracking-wider text-gray-900">
+                            Rp. 5.000.000
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
