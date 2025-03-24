@@ -52,12 +52,12 @@
 
           <div class="flex items-center gap-4">
             <div class="flex gap-4">
-              <a
+              <button
+                id="openModal"
                 class="block rounded-md bg-black px-5 py-2.5 text-sm font-medium text-white transition hover:bg-black/80"
-                href="#"
               >
                 Pesan
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -171,5 +171,51 @@
         </section>
       </div>
     </div>
+    <div
+      id="modal"
+      class="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[10px] hidden"
+    >
+      <div class="bg-white p-6 rounded-lg shadow-lg w-[1000px] h-fit">
+        <h2 class="text-lg font-bold">Formulir Pemesanan</h2>
+        <p class="text-gray-600">
+          Silakan isi data berikut untuk melakukan pemesanan.
+        </p>
+        <input
+          type="text"
+          placeholder="Nama"
+          class="w-full border p-2 mt-4 rounded-md"
+        />
+        <input
+          type="text"
+          placeholder="Alamat"
+          class="w-full border p-2 mt-2 rounded-md"
+        />
+        <select
+          name="produk"
+          id="produk"
+          class="mt-4 border border-black/10 px-4 py-2 rounded-sm"
+        >
+          <option value="Pilih Produk" disabled selected class="hidden">
+            Pilih Produk
+          </option>
+          <option value="Samsung">Samsung</option>
+          <option value="Xiaomi">Xiaomi</option>
+        </select>
+        <div class="flex justify-end mt-4 gap-2">
+          <button
+            id="closeModal"
+            class="px-4 py-2 text-gray-800 border border-white hover:border-black rounded-md"
+          >
+            Tutup
+          </button>
+          <button
+            class="px-4 py-2 bg-black hover:bg-black/80 text-white rounded-md"
+          >
+            Pesan Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
